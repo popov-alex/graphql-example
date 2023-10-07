@@ -12,3 +12,6 @@ export const products = [
 ];
 
 export const getAllProducts = () => products;
+
+export const getProductsByPrice = (min: number, max: number) =>
+  products.filter((product) => product.price >= min && product.price <= max);
